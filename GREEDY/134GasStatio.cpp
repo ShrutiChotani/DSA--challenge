@@ -8,7 +8,7 @@ public:
         int remain = accumulate(gas.begin(), gas.end(), 0) - accumulate(cost.begin(), cost.end(), 0);
         if (remain < 0) return -1;
 
-        int start = 0;
+        int start= 0;
         int currRemain = 0;
         for (int i = 0; i < n; ++i) {
             currRemain += gas[i] - cost[i];
@@ -22,7 +22,7 @@ public:
     }
 };
 
-// Example usage
+
 int main() {
     Solution solution;
     vector<int> gas = {1, 2, 3, 4, 5};
